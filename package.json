@@ -1,15 +1,25 @@
 {
   "name": "myapp",
   "version": "0.1.0",
+  "homepage": "http://13.233.96.252/test/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "formik": "^2.2.9",
+    "jquery": "^3.6.0",
+    "modernizr-webpack-plugin": "^1.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-isotope": "^1.0.7",
+    "react-router-dom": "^5.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
