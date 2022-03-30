@@ -1,12 +1,13 @@
 {
   "name": "myapp",
   "version": "0.1.0",
-  "homepage": "http://13.233.96.252/test/",
+  "homepage": "http://localhost:3000/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.21.1",
     "formik": "^2.2.9",
     "jquery": "^3.6.0",
     "modernizr-webpack-plugin": "^1.0.7",
