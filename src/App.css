@@ -326,7 +326,7 @@ section.try_us p {
 		position: absolute;
 		right: 0;
 		top: 0;
-		display: none
+		opacity: 0;
 	}
 	nav ul {
 		flex-direction: column;
@@ -591,11 +591,18 @@ section#portfolio {
 	}
 }
 
-@media(max-width:464px) {
-	.portfolio-item {
-		width: calc(100%);
-		padding: 0 15px 15px 15px
-	}
+@media (max-width: 1024px)
+{
+.portfolio-item {
+    position: relative !important;
+    padding: 0 15px 15px 15px;
+    width: auto !important;
+    transform: none !important;
+    height: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+}
 }
 
 section.want_to_get {
@@ -1400,3 +1407,57 @@ label.error {
 {
 	color: red;
 }
+@media(max-width:1024px)
+{
+@-webkit-keyframes SHOW-BOX {
+    0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@-moz-keyframes SHOW-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@-o-keyframes SHOW-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@keyframes SHOW-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+
+.show-box {
+    -webkit-animation: SHOW-BOX 2s ease;
+    -moz-animation: SHOW-BOX 2s ease;
+    -o-animation: SHOW-BOX 2s ease;
+    animation: SHOW-BOX 2s ease;
+	opacity: 1;
+
+}
+
+@-webkit-keyframes HIDE-BOX {
+    0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@-moz-keyframes HIDE-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@-o-keyframes HIDE-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+@keyframes HIDE-BOX {
+   0%   { opacity: 0;    right: -100%;}
+    100% { opacity: 1;    right: 0; }
+}
+
+.hide-box {
+    -webkit-animation: HIDE-BOX 2s ease;
+    -moz-animation: HIDE-BOX 2s ease;
+    -o-animation: HIDE-BOX 2s ease;
+    animation: HIDE-BOX 2s ease;
+	animation-direction: reverse;
+	opacity: 0;
+	
+}}

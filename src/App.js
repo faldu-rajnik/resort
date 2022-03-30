@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import logo from './img/logo.png';
 import bar from './img/bar.png';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -14,7 +14,11 @@ import Fooddrink from './Components/fooddrink';
 import Contact from './Components/Contact';
 import Team from './Components/team';
 import Footer from './Components/footer';
+import Api from './Components/api';
 function App() {
+  const [isActive, setActive] = useState("false");
+  const handleToggle = () => {
+    setActive(!isActive);  };
   return (
 <>
     <div className="header_container" id='header_container'>
@@ -24,11 +28,12 @@ function App() {
                     <a href="#home"><img alt="resort_spa" src={logo} className="img-fluid"/></a>
                 </div>
                 <div className="bar">
-                    <img alt="resort_spa" src={bar}/>
+                    <img alt="resort_spa" src={bar} onClick={handleToggle}/>
                 </div>
-                <nav>
-                    <div className="close_icn">X</div>
-    <Router>
+                <nav className={ isActive ? 'hide-box' : 'show-box' }>
+                    <div className="close_icn " onClick={handleToggle}>X</div>
+                    
+    <Router >
 
         <ul>
           <li>
@@ -81,6 +86,7 @@ function App() {
         <Contact/>
         <Team/>
         <Footer/>
+        <Api/>
 
         </>
   );
