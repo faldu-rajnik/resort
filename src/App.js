@@ -54,6 +54,9 @@ function App() {
           <li>
             <Link className='hlink' to="/contact#contact">Contact </Link>
           </li>
+          <li>
+            <Link className='hlink' to="/api#api">API </Link>
+          </li>
         </ul>
 
         {/*

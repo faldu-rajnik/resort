@@ -1461,3 +1461,32 @@ label.error {
 	opacity: 0;
 	
 }}
+
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.random-user {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 25px;
+    color: #fff;
+    box-shadow: 0px 0px 1px #ffffff;
+    padding: 15px;
+}
+div#api {
+    background: #000000;
+}
+.load-more {
+    text-align: center;
+    padding-bottom: 20px;
+}
+button.btn-grad {
+    background: #ffffff;
+    border: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+}
